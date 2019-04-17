@@ -1,0 +1,46 @@
+* {
+    font-size: 16px;
+}
+
+.my-arena{
+    Position: relative;
+    width: 800px;
+    height: 600px;
+    background-color: lightblue;
+} 
+#myShape {
+    position: absolute;
+    top: 275px; /* max of 550 */
+    right: 375px; /* max of 750 */
+}
+
+.my-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.0em
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(211, 28, 135);
+    border-radius: 50%;
+}
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(211, 28, 135);
+    
+}
+.triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid  rgb(211, 28, 135);
+}
