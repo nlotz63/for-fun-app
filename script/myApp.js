@@ -1,5 +1,7 @@
 var myApp = (function myModule() {
   var count = 0;
+  var resultsArray = [];
+
   //show chosen shape
   function myShape(myChoice) {
     var myShape = document.getElementById("myShape");
@@ -17,12 +19,13 @@ var myApp = (function myModule() {
 
   function moveIt() {
     var ranTop = Math.random() * 550;
-    var ranTopstring = ranTop.toString();
+    var ranTopstring = ranTop.toFixed(0).toString();
     var newTop = ranTopstring + "px";
     var ranRight = Math.random() * 750;
-    var ranRightstring = ranRight.toString();
+    var ranRightstring = ranRight.toFixed(0).toString();
     var newRight = ranRightstring + "px";
-    console.log(newTop);
+    resultsArray.push("Top is " + newTop + " Right is " + newRight);
+    console.log(resultsArray);
     var myShape = document.getElementById("myShape");
     myShape.style.top = newTop;
     myShape.style.right = newRight;
@@ -34,7 +37,7 @@ var myApp = (function myModule() {
     var message = document.getElementById("message");
     console.log(currentCount);
     if (currentCount < 8) {
-      currentCount = currentCount + 1;
+      currentCount ++;
       console.log(currentCount);
     } else {
       message.innerHTML = "How about giving someone else a shot?";
@@ -46,9 +49,21 @@ var myApp = (function myModule() {
     count = currentCount;
   }
 
+  function showResults() {
+    var results = document.getElementById("results");
+    for (let i = 0; i<9; i++) {
+      var node = document.createElement("P");
+      var textnode = document.createTextNode(resultsArray[i]);
+  node.appendChild(textnode);
+      results.appendChild(node);
+      console.log("move it called");
+    }
+  }
+
   var publicAPI = {
     moveIt: moveIt,
-    myShape: myShape
+    myShape: myShape,
+    showResults: showResults
   };
 
   return publicAPI;
