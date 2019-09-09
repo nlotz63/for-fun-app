@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="550" height="500" style="background-color:white">
+    <g id="axis">
+        <path d="M50,50 L50,455 M50,450 L550,450 M95,450 L95,455 M140,450 L140,455 M185,450 L185,455 M230,450 L230,455 M275,450 L275,455 M320,450 L320,455 M365,450 L365,455 M410,450 L410,455 M455,450 L455,455 M500,450 L500,455
+        M50,400 L45,400 M50,350 L45,350 M50,300 L45,300 M50,250 L45,250 M50,200 L45,200 M50,150 L45,150 M50,100 L45,100" style="fill:none;stroke:black;stroke-width:2px"/>
+        <text x="50" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            0
+        </text>
+        <text x="95" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            10
+        </text>
+        <text x="140" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            20
+        </text>
+        <text x="185" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            30
+        </text>
+        <text x="230" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            40
+        </text>
+        <text x="275" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            50
+        </text>
+        <text x="320" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            60
+        </text>
+        <text x="365" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            70
+        </text>
+        <text x="410" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            80
+        </text>
+        <text x="455" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            90
+        </text>
+        <text x="500" y="470" style="font-size:20;font-weight:bold" text-anchor="middle">
+            100
+        </text>
+        <text x="40" y="405" style="font-size:20;font-weight:bold" text-anchor="middle">
+            1
+        </text>
+        <text x="40" y="355" style="font-size:20;font-weight:bold" text-anchor="middle">
+            2
+        </text>
+        <text x="40" y="305" style="font-size:20;font-weight:bold" text-anchor="middle">
+            3
+        </text>
+        <text x="40" y="255" style="font-size:20;font-weight:bold" text-anchor="middle">
+            4
+        </text>
+        <text x="40" y="205" style="font-size:20;font-weight:bold" text-anchor="middle">
+            5
+        </text>
+        <text x="40" y="155" style="font-size:20;font-weight:bold" text-anchor="middle">
+            6
+        </text>
+        <text x="40" y="105" style="font-size:20;font-weight:bold" text-anchor="middle">
+            7
+        </text>
+        <text x="545" y="490" style="text-anchor:end;font-size:20;font-weight:bold">
+            Quantity per month
+        </text>
+        <text style="text-anchor:middle; font-size:20; font-weight:bold">
+            <tspan x="50" y="25">Price, $</tspan> <tspan x="50" y="48">per widget</tspan>
+        </text>
+    </g>
+    <g id="demand">
+    <line x1="50" x2="410" y1="125" y2="425" style="stroke-width:4; stroke:RGB(0,153,255)"/>
+    <text x="410" y="440" style="text-anchor:middle; font-size:20">
+        Demand
+    </text>
+        
+    </g>
+</svg>

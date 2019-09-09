@@ -40,7 +40,7 @@ var myApp = (function myModule() {
       currentCount ++;
       console.log(currentCount);
     } else {
-      message.innerHTML = "How about giving someone else a shot?";
+      message.innerHTML = "How about giving someone else a shot?<br/>";
       currentCount = 0;
       setTimeout(function() {
         message.innerHTML = "";
@@ -51,7 +51,8 @@ var myApp = (function myModule() {
 
   function showResults() {
     var results = document.getElementById("results");
-    for (let i = 0; i<9; i++) {
+    var rows = resultsArray.length;
+    for (let i = 0; i< rows; i++) {
       var node = document.createElement("P");
       var textnode = document.createTextNode(resultsArray[i]);
   node.appendChild(textnode);
@@ -60,10 +61,19 @@ var myApp = (function myModule() {
     }
   }
 
+  function reset () {
+    var results = document.getElementById("results");
+    resultsArray = [];
+    count = 0;
+    results.innerHTML = "";
+
+  }
+
   var publicAPI = {
     moveIt: moveIt,
     myShape: myShape,
-    showResults: showResults
+    showResults: showResults,
+    reset: reset
   };
 
   return publicAPI;

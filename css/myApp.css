@@ -2,6 +2,16 @@
     font-size: 16px;
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    overflow: hidden;
+}
+.flex-row {
+    width: 100%;
+}
+
 .my-arena{
     Position: relative;
     width: 800px;
@@ -43,4 +53,12 @@ p {
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-bottom: 50px solid  rgb(211, 28, 135);
+}
+#results { 
+    position: absolute;
+    top: 750px;
+    left: 300px;
+}
+button:hover {
+    background-color: lightblue;
 }

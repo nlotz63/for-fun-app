@@ -6,21 +6,25 @@
   <title>Catch the Shape</title>
   <link rel="stylesheet" type="text/css" href="css/myApp.css" />
   <script src="script/myApp.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <!-- This begins the content the browser actually displays on the page -->
 
 <body>
-  <h1 class="my-title">Let's Play Catch the Shape</h1>
-  <p>
+  <div class="flex-container">
+    <h1 class="my-title flex-row">Let's Play Catch the Shape</h1>
+  <p class="flex-row">
     Choose a shape. Then try to catch it using your mouse. Good Luck!
   </p>
   <div class="my-arena">
     <div id="myShape" class="placeholder" onmouseover="myApp.moveIt()"></div>
   </div>
-  <div>
-    <p id="message"></p>
+  <div class="flex-row">
+    <p id="message" class="flex-row"></p>
   </div>
+
+  <div class="flex-row">
   <h2>Pick a shape</h2>
 
   <form>
@@ -29,13 +33,20 @@
     <input type="radio" name="shape" value="square" onclick="myApp.myShape('square')" />
     Square<br />
     <input type="radio" name="shape" value="triangle" onclick="myApp.myShape('triangle')" />Triangle
+  
   </form>
-  <br/>
-  <button onclick="myApp.showResults()">Show results</button>
-  <button onclick = "myApp.reset()">Reset</button>
-  <div id="results">
-
-  </div>
+  <div class="flex-row">
+    <div>
+      <br/>
+      <button onclick="myApp.showResults()">Show results</button>
+      <button onclick = "myApp.reset()">Reset</button>
+    </div>
+    
+    <div id="results"></div>
+    </div>
+  
+</div>
+</div>
 </body>
 
 </html>
